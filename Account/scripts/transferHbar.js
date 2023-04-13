@@ -5,13 +5,13 @@ const {
     Hbar
 } = require("@hashgraph/sdk");
 
-const myAccountId = "0.0.14077";
-const myPrivateKey = "70b86ec7c816795d896e64dcf6a50d84a2a8a287b6e919033a6457f3f725b211";
+const myAccountId = process.env.MY_ACCOUNT_ID
+const myPrivateKey = process.env.MY_PRIVATE_KEY
 
 // const myAccountId = "put your account ID here";
 // const myPrivateKey = "put your private key here";
 
-const otherAccountId = "0.0.14153";
+const otherAccountId = "0.0.3974652";
 
 async function main() {
     // Create our connection to the Hedera network

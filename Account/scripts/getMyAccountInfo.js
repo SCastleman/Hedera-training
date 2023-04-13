@@ -2,9 +2,10 @@ const {
     Client,
     AccountBalanceQuery
 } = require("@hashgraph/sdk");
-
-const myAccountId = "0.0.14077";
-const myPrivateKey = "70b86ec7c816795d896e64dcf6a50d84a2a8a287b6e919033a6457f3f725b211";
+require('dotenv').config({ path: '../.env' });
+const myAccountId = process.env.MY_ACCOUNT_ID
+const myPrivateKey = process.env.MY_PRIVATE_KEY
+const myPublicKey = process.env.MY_PUBLIC_KEY
 
 async function main() {
     // Create our connection to the Hedera network
