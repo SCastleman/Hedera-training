@@ -1,6 +1,6 @@
 const {
     Client,
-    AccountBalanceQuery
+    AccountBalanceQuery,
 } = require("@hashgraph/sdk");
 require('dotenv').config({ path: '../.env' });
 const myAccountId = process.env.MY_ACCOUNT_ID
